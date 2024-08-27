@@ -1,3 +1,4 @@
+import { ThemeProvider } from "@/utils/ThemeContext";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { twMerge } from "tailwind-merge";
@@ -20,7 +21,7 @@ export default function RootLayout({
       <body
         className={twMerge(inter.className, "bg-black text-white antialiased")}
       >
-        {children}
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );
