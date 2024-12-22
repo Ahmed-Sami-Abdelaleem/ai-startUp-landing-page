@@ -8,6 +8,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      scrollbar: ["hidden"],
       colors: {
         light: {
           primary: "#ffffff",

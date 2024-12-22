@@ -1,3 +1,7 @@
+"use client";
+
+import productImage from "@/assets/product-image.png";
+import { DotLottiePlayer } from "@dotlottie/react-player";
 const tabs = [
   {
     icon: "/assets/lottie/vroom.lottie",
@@ -26,5 +30,48 @@ const tabs = [
 ];
 
 export const Features = () => {
-  return <section>Features</section>;
+  return (
+    <section className="py-20 md:py-24">
+      <div className="container">
+        <h2 className="text-5xl font-medium text-center tracking-tighter">
+          Elevate your SEO efforts.
+        </h2>
+        <p className="text-white/70 text-lg md:text-xl max-w-2xl mx-auto tracking-tighter text-center mt-5">
+          From small startups to large enterprises, our AI-driver tool has
+          revolutionized the way business approach SEO.
+        </p>
+        <div className="mt-10 flex flex-col md:flex-row gap-3">
+          {tabs.map((tab) => (
+            <div
+              key={tab.title}
+              className="border border-white/15 flex p-2.5 rounded-xl gap-2.5 items-center lg:flex-1"
+            >
+              <div className="h-12 w-12 border border-white/15 rounded-lg inline-flex justify-center items-center">
+                <DotLottiePlayer
+                  src={tab.icon}
+                  className="h-5 w-5"
+                  autoplay
+                  loop
+                />
+              </div>
+              <div className="font-medium">{tab.title}</div>
+              {tab.isNew && (
+                <div className="text-xs rounded-full px-2 py-0.5 bg-[#c447ff] text-black font-semibold">
+                  new
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+        <div className="border border-white/20 p-2.5 rounded-xl mt-3">
+          <div
+            className="aspect-video bg-cover border border-white/20"
+            style={{
+              backgroundImage: `url(${productImage.src})`,
+            }}
+          ></div>
+        </div>
+      </div>
+    </section>
+  );
 };
