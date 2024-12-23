@@ -1,5 +1,6 @@
 import { CallToAction } from "@/sections/CallToAction";
 import { Features } from "@/sections/Features";
+import { Footer } from "@/sections/Footer";
 import { Hero } from "@/sections/Hero";
 import { Header } from "../sections/Header";
 import { LogoTicker } from "../sections/LogoTicker";
@@ -13,6 +14,7 @@ function page() {
       <Features />
       <Testimonials />
       <CallToAction />
+      <Footer />
     </>
   );
 }
