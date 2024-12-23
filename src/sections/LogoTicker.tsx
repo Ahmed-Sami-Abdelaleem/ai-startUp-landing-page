@@ -8,7 +8,7 @@ import Image from "next/image";
 export const LogoTicker = () => {
   const logos = [acmeLogo, apexLogo, celestialLogo, quantumLogo, echoLogo];
   return (
-    <section className="py-20 md:py-24">
+    <section className="py-20 md:py-24 overflow-hidden">
       <div className="container">
         <div className="flex items-center gap-5">
           <div className="flex-1 md:flex-none">
