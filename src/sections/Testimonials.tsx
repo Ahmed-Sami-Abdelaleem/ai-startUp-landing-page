@@ -1,9 +1,10 @@
+"use client";
 import avatar1 from "@/assets/avatar-1.png";
 import avatar2 from "@/assets/avatar-2.png";
 import avatar3 from "@/assets/avatar-3.png";
 import avatar4 from "@/assets/avatar-4.png";
+import { motion } from "framer-motion";
 import Image from "next/image";
-
 const testimonials = [
   {
     text: "“This product has completely transformed how I manage my projects and deadlines”",
@@ -42,9 +43,23 @@ export const Testimonials = () => {
           Our revolutionary AI SEO tools have transformed our clients&apos;
           strategies.
         </p>
-        <div className="overflow-hidden overflow-y-scroll scrollbar-hide  mt-10 [mask-image:linear-gradient(to_right,transparent,black_20%,transparent)]">
-          <div className="flex gap-5">
-            {testimonials.map((testimonial) => (
+        <div className="flex overflow-hidden overflow-y-scroll scrollbar-hide  mt-10 [mask-image:linear-gradient(to_right,transparent,black_20%,transparent)]">
+          <motion.div
+            initial={{
+              translateX: "-50%",
+            }}
+            animate={{
+              translateX: "0",
+            }}
+            transition={{
+              repeat: Infinity,
+
+              ease: "linear",
+              duration: 30,
+            }}
+            className="flex gap-5 flex-none"
+          >
+            {[...testimonials, ...testimonials].map((testimonial) => (
               <div
                 key={testimonial.name}
                 className="border border-white/15 p-6 rounded-xl bg-[linear-gradient(to_bottom_left,rgb(140,69,255,0.3),black)] max-w-xs flex-none"
@@ -67,7 +82,7 @@ export const Testimonials = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
