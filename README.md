@@ -5,6 +5,13 @@
 
 - why we need Landing page?
   Because a landing page essential part of digital marketing and online business strategies.
+ ## Youtube video: https://www.youtube.com/watch?v=wGEOMEYsGv4
+  ##screen shots
+![Image](https://github.com/user-attachments/assets/9b85cf85-570d-45b0-886c-7b9e7fec09e7)
+![Image](https://github.com/user-attachments/assets/ec2a4e4b-643a-461c-84d7-30377c864e3b)
+![Image](https://github.com/user-attachments/assets/94486baf-eefb-4d47-a42e-f8fe73b48544)
+![Image](https://github.com/user-attachments/assets/d6685399-06f8-4f9d-8a28-d1487424fe93)
+![Image](https://github.com/user-attachments/assets/3a42d7df-8e2d-4eff-8e8e-73b7bca4d48b)
 
 ## Table of Contents
 
@@ -12,9 +19,9 @@
 - [Sections](#sections)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
-- [Folder Structure](#folder-structure)
+- [Folder Structure](#folder-structure)![Screenshot from 2025-01-29 09-14-51](https://github.com/user-attachments/assets/30541548-939c-468d-baf4-cc0e1217a224)
+
 - [Scripts](#scripts)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Installation
